@@ -11,7 +11,7 @@ env:
 jobs:
 
   terraform:
-    name: Terraform Validate, Plan & Apply
+    name: Terraform Validate, Plan & destroy
     runs-on: ubuntu-latest
 
     steps:
