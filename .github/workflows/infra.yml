@@ -81,10 +81,10 @@ jobs:
       # ============================================================
       # TERRAFORM APPLY
       # ============================================================
-      - name: Terraform Apply
+      - name: Terraform destroy
         working-directory: ${{ env.TF_WORKING_DIR }}
         run: |
-          terraform apply -auto-approve tfplan
+          terraform destroy -auto-approve tfplan
 
 
       # ============================================================
