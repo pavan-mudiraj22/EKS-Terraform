@@ -75,7 +75,7 @@ jobs:
       - name: Terraform Plan
         working-directory: ${{ env.TF_WORKING_DIR }}
         run: |
-          terraform plan -out=tfplan
+          terraform plan -destroy -out=tfplan
 
 
       # ============================================================
